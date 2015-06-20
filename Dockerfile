@@ -21,7 +21,7 @@ ADD create_db.sh /create_db.sh
 RUN chmod +x /*.sh
 
 # Add volumes for MySQL 
-VOLUME  ["/var/www/html/"]
+VOLUME  ["/var/www/html/wp-content/themes"]
 
 EXPOSE 80 3306
 CMD ["/run.sh"]
